@@ -1,0 +1,83 @@
+version: "3.1"
+
+nlu:
+- intent: improve_speaking
+  examples: |
+    - I want to improve my speaking skills
+    - How can I get better at conversation in English?
+    - I need to improve speaking
+    - Help me with speaking and conversation skills
+
+- intent: improve_vocabulary
+  examples: |
+    - I want to learn more vocabulary
+    - I need help with learning expressions
+    - Can you teach me new words and expressions?
+    - Improve my vocabulary
+    - How can I expand my vocabulary?
+    - I want to know more English words
+    - Help me learn new words daily
+    - I need to boost my vocabulary
+    - Are there any tips for better vocabulary retention?
+    - I want to learn common idioms and phrases
+    - How can I use vocabulary more naturally?
+    - I need to broaden my range of words
+    - What's the best way to increase my word power?
+    - Can you suggest methods for vocabulary improvement?
+    - I'm looking to enhance my lexicon
+    - How do I build a richer vocabulary?
+
+- intent: improve_listening
+  examples: |
+    - I want to improve my listening skills
+    - Can you help me with listening comprehension?
+    - How do I improve my listening ability?
+
+- intent: improve_reading_writing
+  examples: |
+    - I need to get better at reading and writing
+    - How can I improve my reading skills?
+    - I want to practice writing essays
+    - Help me with reading and writing
+
+- intent: improve_grammar
+  examples: |
+    - I want to improve my grammar and sentence structure
+    - Help me with English grammar
+    - How can I improve my grammar?
+
+- intent: learn_culture
+  examples: |
+    - I want to learn about English-speaking countries' customs
+    - Teach me about culture in English-speaking countries
+    - How can I understand English-speaking culture better?
+
+- intent: improve_pronunciation
+  examples: |
+    - I want to sound more like a native speaker
+    - How can I improve my pronunciation?
+    - Help me with my accent and pronunciation
+
+- intent: analyze_entities
+  examples: |
+    - Can you analyze these words for me?
+    - Analyze this sentence for me
+    - What entities can you extract from this?
+
+- intent: ask_chatgpt
+  examples: |
+    - Can you ask ChatGPT for more details?
+    - I want to know more, ask ChatGPT
+    - Can ChatGPT help with this topic?
+
+- intent: translate_to_language
+  examples: |
+    - Can you translate this to Spanish?
+    - Please translate this text for me
+    - Translate this phrase into Vietnamese
+
+- intent: inform
+  examples: |
+    - My level is beginner
+    - I am at intermediate level
+    - I am an advanced speaker

@@ -1,0 +1,25 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohM7egKL8sNT69KDE3N7GotjYWABPXH7Y=": "action_improve_grammar",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohM7egKL8sNT69KDE3N7GoljjT0HURNjYWAJCwQXQ=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohM7egKL8sNb64IDUxOzMvvbY2FgA0FCAh": "action_improve_speaking",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohM7egKL8sNb64IDUxOzMvvZY44zC0EWFwLABbykK1": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BCidl5hTWZUaD+RklmSmFtfWxgIAM1ggJg==": "action_analyze_entities",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BCidl5hTWZUaD+RklmSmFtcSZxyGNiIMjgUAW/1CxA==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB2fnJFYkl5QUlsbCwCWWh33": "action_chatgpt",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB2fnJFYkl5QUkucSTDV+I2KBQCOsjqZ": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJzWxKC8+uTSnpLQotbY2FgDUOR7j": "action_learn_culture",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJzWxKC8+uTSnpLQotZZIs1D0EDIyFgAGKD77": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohM7egKL8sFSqfmZdeWxsLAFUIIJw=": "action_improve_listening",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohM7egKL8sFSqfmZdeS5x5mPqIMToWADNrRCY=": "action_listen",
+    "eJwtysEJwDAIQNFVHKATuEopIkVCwJpiTC/B3Rtob//B32duMG+Xh/iM2gxhfkHGlyD80NpDbL2ji6+n2mIghLN15RCKRspWBhfJPF7Z0SIh": "action_translate_to_language",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhpCgxrzgnsSQ1viQ/PicxL700MT21ljgzsesl1opYAHoZSLU=": "action_listen",
+    "eJwtisEJgDAMAFfJAE7QVURC0SABm5Y01kfo7gb0dXdwq88FvCkNzLtxlQT+CUoulOCPi7uRxHt30nhYIi0Bl6Z1ECrlg+XER9mCc24vH5YjDA==": "action_improve_reading_writing",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohM7egKL8sNb4oNTElMy89vrwoswRI1xJnKi7dxFsTCwBL4Ut2": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohM7egKL8sNR5I5pXmJWcmglTX1sYCANwJIlg=": "action_improve_pronunciation",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohM7egKL8sNR5I5pXmJWcmglTXEmcmdr3EWhELAJ5nSVo=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohM7egKL8sNb4sPzkxqTQnsaiytjYWAHWoIQc=": "action_improve_vocabulary",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohM7egKL8sNb4sPzkxqTQnsaiyljgDsWgkyvBYAATiRWc=": "action_listen"
+  }
+}
