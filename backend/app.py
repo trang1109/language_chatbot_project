@@ -3,6 +3,10 @@ from flask_cors import CORS
 from openai import OpenAI
 import spacy
 import requests
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
@@ -12,8 +16,7 @@ nlp = spacy.load("en_core_web_sm")
 
 # OpenAI GPT API key
 client = OpenAI(
-    # defaults to os.environ.get("OPENAI_API_KEY")
-    api_key="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",
+    api_key= os.getenv ("APP_API_KEY")
 )
 
 # Rasa URL

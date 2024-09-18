@@ -5,14 +5,15 @@ from rasa_sdk.types import DomainDict
 from deep_translator import GoogleTranslator
 from openai import OpenAI
 import spacy
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 # Load spaCy model
 nlp = spacy.load("en_core_web_sm")
 
-# OpenAI API key
 client = OpenAI(
-    # defaults to os.environ.get("OPENAI_API_KEY")
-    api_key="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",
+    api_key= os.getenv ("APP_API_KEY")
 )
 class ActionImproveSpeaking(Action):
     def name(self) -> Text:
