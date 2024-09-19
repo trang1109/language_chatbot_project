@@ -1,0 +1,52 @@
+version: "3.1"
+
+stories:
+- story: user asks about improving speaking
+  steps:
+  - intent: improve_speaking
+  - action: action_improve_speaking
+
+- story: user asks about improving vocabulary
+  steps:
+  - intent: improve_vocabulary
+  - action: action_improve_vocabulary
+
+- story: user asks about improving listening
+  steps:
+  - intent: improve_listening
+  - action: action_improve_listening
+
+- story: user asks about improving reading and writing
+  steps:
+  - intent: improve_reading_writing
+  - action: action_improve_reading_writing
+
+- story: user asks about improving grammar
+  steps:
+  - intent: improve_grammar
+  - action: action_improve_grammar
+
+- story: user asks about learning culture
+  steps:
+  - intent: learn_culture
+  - action: action_learn_culture
+
+- story: user asks about improving pronunciation
+  steps:
+  - intent: improve_pronunciation
+  - action: action_improve_pronunciation
+
+- story: user asks for entity analysis
+  steps:
+    - intent: analyze_entities
+    - action: action_analyze_entities
+
+- story: user asks chatgpt
+  steps:
+    - intent: ask_chatgpt
+    - action: action_chatgpt
+
+- story: user asks for translation
+  steps:
+    - intent: translate_to_language
+    - action: action_translate_to_language

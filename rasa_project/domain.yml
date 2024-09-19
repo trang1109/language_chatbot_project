@@ -1,0 +1,60 @@
+version: "3.1"
+
+intents:
+  - improve_speaking
+  - improve_vocabulary
+  - improve_listening
+  - improve_reading_writing
+  - improve_grammar
+  - learn_culture
+  - improve_pronunciation
+  - analyze_entities
+  - ask_chatgpt
+  - translate_to_language
+  - inform
+
+actions:
+  - action_improve_speaking
+  - action_improve_vocabulary
+  - action_improve_listening
+  - action_improve_reading_writing
+  - action_improve_grammar
+  - action_learn_culture
+  - action_improve_pronunciation
+  - action_analyze_entities
+  - action_chatgpt
+  - action_translate_to_language
+  - action_notify_language_not_supported
+
+slots:
+  language_level:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+
+responses:
+  utter_improve_speaking:
+    - text: "To improve your speaking skills, practice speaking with native speakers regularly and actively listen to their responses."
+
+  utter_improve_vocabulary:
+    - text: "You can enhance your vocabulary by reading more books, articles, and writing down new words and expressions."
+
+  utter_improve_listening:
+    - text: "Improving your listening skills requires regular practice. Try listening to English podcasts or watching movies without subtitles."
+
+  utter_improve_reading_writing:
+    - text: "To improve your reading and writing, practice reading English books and writing short stories or essays."
+
+  utter_improve_grammar:
+    - text: "To strengthen your grammar, focus on sentence structure and practice by reading and writing more."
+
+  utter_learn_culture:
+    - text: "To understand English-speaking cultures, you can explore traditions, holidays, and customs through reading or travel."
+
+  utter_improve_pronunciation:
+    - text: "To improve your pronunciation, practice listening to native speakers and repeating words or sentences after them."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
