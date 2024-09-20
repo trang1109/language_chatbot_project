@@ -1,4 +1,8 @@
 Flask
-openai
 spacy
 requests
+pip install -U pip setuptools wheel
+pip install -U spacy
+python -m spacy download en_core_web_sm
+pip install python-dotenv
+pip install tensorflow
