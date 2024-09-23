@@ -1,2 +1,3 @@
 # Bỏ qua tệp .env chứa API keys
 .env
+.venv
