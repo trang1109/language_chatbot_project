@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from openai import OpenAI
+from transformers import pipeline
 import spacy
 import requests
 import os
@@ -14,10 +14,8 @@ CORS(app)
 # Load spaCy model
 nlp = spacy.load("en_core_web_sm")
 
-# OpenAI GPT API key
-client = OpenAI(
-    api_key= os.getenv ("APP_API_KEY")
-)
+# Hugging Face model (sử dụng GPT hoặc bất kỳ mô hình nào khác từ Hugging Face)
+model = pipeline("text-generation", model="gpt2")
 
 # Rasa URL
 RASA_SERVER_URL = "http://localhost:5005/webhooks/rest/webhook"
@@ -35,16 +33,9 @@ def chat():
     rasa_response = requests.post(RASA_SERVER_URL, json={"sender": "user", "message": user_message})
     rasa_data = rasa_response.json()
 
-    # Gửi câu hỏi tới GPT-3.5 để sinh câu trả lời
-    response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system", "content": "You are a helpful assistant."},
-            {"role": "user", "content": user_message}
-        ],
-        max_tokens=150
-    )
-    gpt_reply = response['choices'][0]['message'].content.strip()
+    # Gửi câu hỏi tới mô hình Hugging Face GPT-2 để sinh câu trả lời
+    response = model(user_message, max_length=50, num_return_sequences=1, truncation=True)
+    gpt_reply = response[0]['generated_text'].strip()
 
     # Trả lại câu trả lời
     return jsonify({"reply": gpt_reply, "rasa_intent": rasa_data})

@@ -3,18 +3,19 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.types import DomainDict
 from deep_translator import GoogleTranslator
-from openai import OpenAI
+from transformers import pipeline
 import spacy
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
+
 # Load spaCy model
 nlp = spacy.load("en_core_web_sm")
 
-client = OpenAI(
-    api_key= os.getenv ("APP_API_KEY")
-)
+# Load Hugging Face model (GPT-2 hoặc bất kỳ mô hình nào khác)
+chat_model = pipeline("text-generation", model="gpt2")
+
 class ActionImproveSpeaking(Action):
     def name(self) -> Text:
         return "action_improve_speaking"
@@ -87,16 +88,9 @@ class ActionChatGPT(Action):
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: DomainDict) -> List[Dict[Text, Any]]:
         try:
             user_message = tracker.latest_message.get('text')
-            # Sử dụng API ChatCompletion mới của GPT-3.5
-            response = client.chat.completions.create(
-                model="gpt-3.5-turbo",
-                messages=[
-                    {"role": "system", "content": "You are a helpful assistant."},
-                    {"role": "user", "content": user_message}
-                ],
-                max_tokens=150
-            )
-            gpt_reply = response['choices'][0]['message'].content.strip()
+            # Sử dụng mô hình Hugging Face để sinh câu trả lời
+            response = chat_model(user_message, max_length=50, num_return_sequences=1, truncation=True)
+            gpt_reply = response[0]['generated_text'].strip()
             dispatcher.utter_message(text=gpt_reply)
         except Exception as e:
             dispatcher.utter_message(text=f"An error occurred: {str(e)}")
