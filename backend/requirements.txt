@@ -1,4 +1,7 @@
-Flask
-openai
-spacy
-requests
+.venv\Scripts\activate
+pip install flask
+pip install flask-cors
+pip install openai
+pip install spacy
+python -m spacy download en_core_web_sm
+pip install python-dotenv
