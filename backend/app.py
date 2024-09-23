@@ -34,7 +34,7 @@ def chat():
     rasa_data = rasa_response.json()
 
     # Gửi câu hỏi tới mô hình Hugging Face GPT-2 để sinh câu trả lời
-    response = model(user_message, max_length=150, num_return_sequences=1, truncation=True)
+    response = model(user_message, max_length=50, num_return_sequences=1, truncation=True)
     gpt_reply = response[0]['generated_text'].strip()
 
     # Trả lại câu trả lời

@@ -89,7 +89,7 @@ class ActionChatGPT(Action):
         try:
             user_message = tracker.latest_message.get('text')
             # Sử dụng mô hình Hugging Face để sinh câu trả lời
-            response = chat_model(user_message, max_length=150, num_return_sequences=1, truncation=True)
+            response = chat_model(user_message, max_length=50, num_return_sequences=1, truncation=True)
             gpt_reply = response[0]['generated_text'].strip()
             dispatcher.utter_message(text=gpt_reply)
         except Exception as e:
